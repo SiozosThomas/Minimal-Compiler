@@ -1,0 +1,10 @@
+program WhileTest
+{
+	declare while1;
+	{
+		while (a + b >= b + c) {
+			input (WhIle1);
+		};
+		b := 8
+	}
+}

@@ -1,0 +1,6 @@
+program forCase
+{
+	forcase
+	when ([a = b]) : input(AGfs0) 
+	default: input(forCa2)
+}

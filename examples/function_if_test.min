@@ -1,0 +1,14 @@
+program FunctionTest
+{
+	declare a, b, c;
+	function function1(in first)
+	{
+		declare ;
+		if (not[a<b or b < c] or a < b) then
+			return a + 8
+	}
+	{
+		print(8 - (8 + 2) * (4 + 1));
+		a := function1(in a);
+	}
+}

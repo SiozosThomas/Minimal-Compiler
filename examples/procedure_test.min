@@ -1,0 +1,10 @@
+program ProcedureTest2
+{
+	declare procedure1;
+	procedure GeorgIa3 (in georGi4)
+	{
+		declare;
+		return -567
+	}
+	precedR1 := preceD2
+}
