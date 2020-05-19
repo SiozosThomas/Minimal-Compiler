@@ -104,3 +104,9 @@ par, x, m, _<br/>
 call, name, _, _<br/>
 Επιστροφή τιμής συνάρτησης:<br/>
 ret, x, _, _<br/>
+
+### semi_code.c
+
+Μεταγγλωτισμένο σε C.
+
+### final_code.asm
