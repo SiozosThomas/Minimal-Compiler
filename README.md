@@ -54,9 +54,13 @@ Comments:
 
 ## Running the project
 
-1. min_compiler.py
-1. Give a file
-1. Output files:
-  1. semi_code.int
-  1. semi_code.c
-  1. final_code.asm
+<ol>
+<li>min_compiler.py</li>
+<li>Give a file</li>
+<li>Output files:</li>
+<ol>
+<li>semi_code.int</li>
+<li>semi_code.c</li>
+<li>final_code.asm</li>
+</ol>
+</ol>
