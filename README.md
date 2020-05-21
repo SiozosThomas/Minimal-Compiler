@@ -1,5 +1,5 @@
 # Mininal++ Compiler
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 Στόχος του project είναι η μεταγλώττιση μιας αυτοσχέδιας συναρτησιακής
 προγραμματιστικής γλώσσας(Minimal++). Το αρχείο εξόδου θα είναι σε Assembly.
 
