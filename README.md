@@ -113,3 +113,7 @@ ret, x, _, _<br/>
 ## Testing
 
 Αρχεία εισόδου υπάρχουν μέσα στον φάκελο "examples".
+
+## Copyright
+
+[MIT](https://github.com/SiozosThomas/Minimal-Compiler/blob/master/LICENSE) © 2020 Thomas Siozos, Georgia Kalitsi
