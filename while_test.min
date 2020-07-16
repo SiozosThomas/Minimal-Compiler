@@ -1,0 +1,11 @@
+program Ortest
+{
+	declare a,b,c,orfunc1;
+	function func(in first)
+	{
+		while (a<b) {
+			print(orfunc1);
+		}
+	}
+		b := 8
+}

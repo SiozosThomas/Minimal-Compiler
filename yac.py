@@ -289,6 +289,7 @@ class yac():
                     self.semi_code.next_quad()
                     self.semi_code.back_path(self.semi_code.get_label(), "not_jump")
                     self.statements()
+                    self.semi_code.next_quad()
                     self.semi_code.back_path(self.semi_code.get_label(), "jump")
                     self.elsepart()
                 else:
@@ -321,6 +322,7 @@ class yac():
                 self.semi_code.back_path(self.semi_code.get_label(), "not_jump")
                 self.token = self.lex.return_token()
                 self.statements()
+                self.semi_code.next_quad()
                 self.semi_code.gen_quad("jump", "_", "_", self.semi_code.get_b_quad())
                 self.semi_code.next_quad()
                 self.semi_code.back_path(self.semi_code.get_label(), "jump")
@@ -364,6 +366,7 @@ class yac():
                         self.semi_code.next_quad()
                         self.semi_code.back_path(self.semi_code.get_label(), "not_jump")
                         self.statements()
+                        self.semi_code.next_quad()
                         self.semi_code.back_path(self.semi_code.get_label(), "jump")
                     else:
                         print("Line: " + str(self.lex.get_line()) +
@@ -501,7 +504,6 @@ class yac():
             self.semi_code.gen_quad("jump", "_", "_", "_")
             self.semi_code.next_quad()
             self.token = self.lex.return_token()
-            self.semi_code.back_path(self.semi_code.get_label(), "not_jump")  #
             self.boolfactor()
 
     def boolfactor(self):
@@ -556,6 +558,7 @@ class yac():
                     self.semi_code.gen_quad(">", self.left, self.op.get_last(), "_")
             else:
                 self.semi_code.gen_quad(self.rel, self.left, self.op.get_last(), "_")
+                self.semi_code.back_path(self.semi_code.get_label() + 3, "not_jump")
             self.semi_code.next_quad()
             self.op.clear_values()
 
